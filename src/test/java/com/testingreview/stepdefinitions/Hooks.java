@@ -1,7 +1,7 @@
-package com.veeam.stepdefinations;
+package com.testingreview.stepdefinitions;
 
 
-import com.veeam.utilities.Driver;
+import com.testingreview.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -28,6 +28,7 @@ public class Hooks {
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot,"image/png","screenshot");
         }
+
 
         Driver.closeDriver();
 

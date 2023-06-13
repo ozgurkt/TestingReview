@@ -1,4 +1,4 @@
-package com.veeam.runners;
+package com.testingreview.runners;
 
 
 import io.cucumber.junit.Cucumber;
@@ -13,9 +13,9 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"},
         features = "src/test/resources",
 
-        glue = "com/veeam/stepdefinations",
+        glue = "com/testingreview/stepdefinations",
         dryRun = false,
-        tags = "@regression"
+        tags = "@main"
 )
 public class CukesRunner {
 }

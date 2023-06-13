@@ -1,4 +1,4 @@
-package com.veeam.utilities;
+package com.testingreview.utilities;
 
 
 public class BrowserUtils {
